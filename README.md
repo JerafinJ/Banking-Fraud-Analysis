@@ -2,69 +2,107 @@
 
 ## Project Overview
 
-This project analyzes banking transactions to identify fraudulent activities and discover patterns associated with fraud. The analysis includes data cleaning, exploratory data analysis, SQL-based insights, visualizations, and dashboard creation.
+This project analyzes banking transactions to identify fraudulent activities and uncover hidden fraud patterns using Python, SQL, and Power BI.
 
-The objective is to help financial institutions proactively detect suspicious transactions and minimize financial losses.
+The project focuses on understanding customer behavior, transaction characteristics, international transactions, fraud categories, and identifying high-risk factors associated with fraudulent activities.
+
+The goal is to help financial institutions proactively detect suspicious activities and support data-driven decision-making.
 
 ---
 
 ## Problem Statement
 
-Banking fraud is one of the major challenges faced by financial institutions. Detecting fraudulent transactions quickly is essential to reduce risks and improve customer security.
+Banking fraud causes significant financial losses and poses serious risks to customers and financial institutions.
 
 This project aims to:
 
-- Identify fraud patterns
+- Detect fraudulent transactions
+- Identify patterns associated with fraud
 - Analyze customer transaction behavior
-- Detect high-risk transaction categories
-- Generate actionable business insights
-- Build an interactive dashboard for monitoring fraud
+- Discover high-risk customer segments
+- Understand fraud trends across countries, cities, and transaction types
+- Build interactive dashboards for business monitoring
 
 ---
 
-## Dataset
+## Dataset Information
 
-Dataset: PaySim Synthetic Financial Dataset
+Dataset Name: Bank Fraud Dataset
 
-Records: 6.3 Million+
+Total Records: 1,000,000
 
-Features:
+Total Features: 26
 
-- step
-- type
-- amount
-- nameOrig
-- oldbalanceOrg
-- newbalanceOrig
-- nameDest
-- oldbalanceDest
-- newbalanceDest
-- isFraud
-- isFlaggedFraud
+### Features
 
-Dataset Source:
+Transaction Information
 
-https://www.kaggle.com/datasets/ealaxi/paysim1
+- transaction_id
+- transaction_date
+- transaction_time
+- transaction_amount
+- payment_method
+- merchant_category
+
+Customer Information
+
+- customer_id
+- customer_age
+- credit_score
+- account_age_years
+- account_balance
+
+Behavioral Features
+
+- num_prev_transactions
+- transaction_freq_monthly
+- distance_from_home_km
+- time_since_last_txn_hrs
+- failed_attempts
+- pin_changed_recently
+
+Location Features
+
+- country
+- city
+- is_international
+
+Time Features
+
+- hour_of_day
+- is_weekend
+- is_night_transaction
+
+Fraud Features
+
+- is_fraud
+- fraud_type
 
 ---
 
 ## Tools & Technologies
 
-Python
+Programming Language
 
-Libraries:
+- Python
+
+Libraries
+
 - Pandas
 - NumPy
 - Matplotlib
 - Seaborn
 
-SQL:
+Database
+
 - MySQL
 
-Visualization:
+Visualization
+
 - Power BI
 
-Version Control:
+Version Control
+
 - Git
 - GitHub
 
@@ -75,13 +113,15 @@ Version Control:
 ### 1. Data Collection
 
 - Imported banking transaction dataset
-- Examined dataset structure
+- Explored dataset structure
+- Verified data types and dimensions
 
 ### 2. Data Cleaning
 
 - Checked missing values
-- Removed duplicates
-- Corrected data types
+- Removed duplicate records
+- Handled null values in fraud_type
+- Converted date and time columns
 - Validated data consistency
 
 ### 3. Exploratory Data Analysis (EDA)
@@ -89,48 +129,66 @@ Version Control:
 Performed analysis on:
 
 - Fraud vs Non-Fraud transactions
-- Transaction type distribution
+- Fraud type distribution
+- International fraud analysis
+- Fraud by merchant category
+- Fraud by payment method
+- Fraud by device type
+- Fraud by country and city
+- Night transaction fraud analysis
+- Weekend fraud analysis
+- Customer age analysis
+- Credit score analysis
 - Transaction amount analysis
-- Hourly fraud trends
-- Customer balance behavior
-- High-risk transaction categories
+- Failed attempts analysis
 
 ### 4. SQL Analysis
 
 Generated business insights using SQL queries:
 
-- Fraud count by transaction type
-- Total fraud amount
-- Hourly fraud analysis
-- Top suspicious transactions
-- Fraud percentage calculation
+- Total fraud transactions
+- Fraud percentage
+- Fraud by country
+- Fraud by merchant category
+- Fraud by payment method
+- International fraud analysis
+- Hourly fraud trends
+- Top fraud types
+- High-value fraudulent transactions
 
-### 5. Dashboard Creation
+### 5. Dashboard Development
 
-Created interactive Power BI dashboard containing:
+Created an interactive Power BI dashboard.
 
-KPIs:
+### KPIs
+
 - Total Transactions
 - Total Fraud Transactions
 - Fraud Percentage
 - Total Transaction Amount
+- Total International Frauds
 
-Visualizations:
-- Fraud by Transaction Type
-- Fraud Trends
-- Transaction Amount Distribution
-- Hourly Fraud Analysis
-- Fraud Heatmap
+### Dashboard Visualizations
+
+- Fraud by Country
+- Fraud by Merchant Category
+- Fraud by Payment Method
+- Fraud by Fraud Type
+- Hourly Fraud Trends
+- International vs Domestic Fraud
+- Fraud by Device Type
+- Fraud by Customer Age Group
 
 ---
 
 ## Key Insights
 
-- Transfer transactions showed the highest fraud occurrence.
-- Fraudulent transactions involved significantly larger amounts.
-- Certain transaction hours exhibited increased fraud activity.
-- Customer balance inconsistencies were strong fraud indicators.
-- Fraud transactions represented a very small percentage of total transactions.
+- International transactions showed a higher fraud risk.
+- Night-time transactions had increased fraud occurrence.
+- Certain merchant categories were more vulnerable to fraud.
+- Customers with lower credit scores exhibited higher fraud exposure.
+- Fraudulent transactions often involved higher transaction amounts.
+- Failed login attempts were strongly associated with fraudulent activities.
 
 ---
 
@@ -142,7 +200,7 @@ Banking-Fraud-Analysis/
 
 ├── Dataset/
 
-│ └── paysim.csv
+│ └── bank_fraud.csv
 
 │
 
@@ -182,26 +240,25 @@ Banking-Fraud-Analysis/
 
 ---
 
-## Future Improvements
+## Future Enhancements
 
-- Build machine learning models for fraud prediction
-- Implement real-time fraud detection
+- Build fraud prediction models using Machine Learning
+- Implement real-time fraud monitoring
 - Deploy dashboard using Streamlit
-- Integrate alert systems for suspicious transactions
+- Create an automated fraud alert system
 
 ---
 
-## Learning Outcomes
-
-This project helped strengthen skills in:
+## Skills Demonstrated
 
 - Data Cleaning
-- Exploratory Data Analysis
+- Exploratory Data Analysis (EDA)
 - SQL Query Writing
 - Data Visualization
 - Dashboard Development
 - Fraud Analytics
-- Business Problem Solving
+- Business Intelligence
+- Problem Solving
 
 ---
 
@@ -209,5 +266,4 @@ This project helped strengthen skills in:
 
 Jerafin J
 
-GitHub:
-https://github.com/yourusername
+GitHub: https://github.com/JerafinJ
