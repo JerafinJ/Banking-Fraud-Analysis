@@ -198,11 +198,7 @@ Banking-Fraud-Analysis/
 
 ├── Python/
 
-│ ├── data_cleaning.ipynb
-
-│ ├── exploratory_analysis.ipynb
-
-│ └── visualizations.ipynb
+│ ├── data_analysis.ipynb
 
 │
 
