@@ -129,18 +129,10 @@ Version Control
 Performed analysis on:
 
 - Fraud vs Non-Fraud transactions
-- Fraud type distribution
-- International fraud analysis
-- Fraud by merchant category
-- Fraud by payment method
-- Fraud by device type
-- Fraud by country and city
-- Night transaction fraud analysis
-- Weekend fraud analysis
-- Customer age analysis
-- Credit score analysis
-- Transaction amount analysis
-- Failed attempts analysis
+- Fraud associated with country
+- Fraud associated with age
+- Fraud associated with channel
+- international fraud distribution
 
 ### 4. SQL Analysis
 
